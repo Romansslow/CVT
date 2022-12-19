@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Страница авторизации</title>
+	<meta charset="utf-8">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/auth.css"> </head>
+
+<body>
+	<h1>Форма авторизации</h1>
+	<!-- Контейнер с картинкой внутри -->
+	<div id="image-container"> <img src="img/laptop.png" alt="Изображение верстальщика за ноутбуком" title="Форма авторизации"> </div>
+	<form >
+		<input type="email" name="login" placeholder="Введите логин (email)" required>
+		<br>
+		<input type="password" name="password" minlength="6" maxlength="20" placeholder="Введите пароль"
+        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" title="Поле должно содержать от 6 до 20 символов, только буквы латинского алфавита и\или цифры"
+        >
+		<br>
+		<input type="submit" value="Войти">
+		<br>
+		<br> </form>
+</body>
+
+</html>
